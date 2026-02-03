@@ -9,7 +9,7 @@
 
 ---
 
-## Member 1: [Name] - Logistic Regression
+## Member 1: Mitali Bela - Logistic Regression
 
 ### Contributions
 
@@ -28,7 +28,7 @@
 
 ---
 
-## Member 2: [Name] - RNN
+## Member 2: Charlotte Kariza - RNN
 
 ### Contributions
 
@@ -47,7 +47,7 @@
 
 ---
 
-## Member 3: [Name] - LSTM
+## Member 3: Ntezirizaza Erneste - LSTM
 
 ### Contributions
 
@@ -66,7 +66,7 @@
 
 ---
 
-## Member 4: [Name] - GRU
+## Member 4: Orpheus Manga - GRU
 
 ### Contributions
 

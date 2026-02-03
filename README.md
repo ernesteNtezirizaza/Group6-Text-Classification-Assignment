@@ -10,12 +10,12 @@ Comparative analysis of text classification performance using different model ar
 
 ## 👥 Team Members
 
-| Name     | Model               | Embeddings              | Contact           |
-| -------- | ------------------- | ----------------------- | ----------------- |
-| Member 1 | Logistic Regression | TF-IDF, Skip-gram, CBOW | email@example.com |
-| Member 2 | RNN                 | TF-IDF, Skip-gram, CBOW | email@example.com |
-| Member 3 | LSTM                | TF-IDF, Skip-gram, CBOW | email@example.com |
-| Member 4 | GRU                 | TF-IDF, Skip-gram, CBOW | email@example.com |
+| Name                | Model               | Embeddings              | Contact           |
+| ------------------- | ------------------- | ----------------------- | ----------------- |
+| Mitali Bela         | Logistic Regression | TF-IDF, Skip-gram, CBOW | m.bela@alustudent.com |
+| Charlotte Kariza    | RNN                 | TF-IDF, Skip-gram, CBOW | c.kariza@alustudent.com |
+| Ntezirizaza Erneste | LSTM                | TF-IDF, Skip-gram, CBOW | e.nteziriza@alustudent.com |
+| Orpheus Manga       | GRU                 | TF-IDF, Skip-gram, CBOW | o.manga@alustudent.com |
 
 ## 🎯 Objectives
 
@@ -299,9 +299,9 @@ All models will be evaluated using:
 
 ## 🤝 Communication
 
-- **Team Meetings:** [Schedule]
-- **Communication Channel:** [Discord/Slack/WhatsApp]
-- **Shared Documents:** [Google Drive link]
+- **Team Meetings:** Google meet
+- **Communication Channel:** WhatsApp
+- **Sharing Documents** 
 
 ## ⚠️ Important Notes
 
@@ -316,11 +316,10 @@ All models will be evaluated using:
 
 For questions or issues, contact:
 
-- Team Lead: [Name] - [Email]
-- Course Instructor: [Name] - [Email]
+- Team Lead: Ntezirizaza Erneste - e.nteziriza@alustudent.com
+- Course Instructor: Samiratu - sntohsi@alueducation.com
 
 ---
 
 **Last Updated:** February 3, 2026  
-**Repository:** [GitHub URL]  
-**License:** [If applicable]
+**Repository:** [\[GitHub URL\]](https://github.com/ernesteNtezirizaza/Group6-Text-Classification-Assignment)  

@@ -1,1 +1,297 @@
-# Group6-Text-Classification-Assignment
+# Text Classification with Multiple Embeddings - Group 6
+
+## 📋 Project Overview
+Comparative analysis of text classification performance using different model architectures and word embedding techniques. This project implements and evaluates multiple embedding-model combinations for spam detection.
+
+**Course:** [Your Course Name]  
+**Date:** February 2026  
+**Dataset:** Spam Detection (SMS Spam Collection)
+
+## 👥 Team Members
+
+| Name | Model | Embeddings | Contact |
+|------|-------|------------|---------|
+| Member 1 | Logistic Regression | TF-IDF, Skip-gram, CBOW | email@example.com |
+| Member 2 | RNN | TF-IDF, Skip-gram, CBOW | email@example.com |
+| Member 3 | LSTM | TF-IDF, Skip-gram, CBOW | email@example.com |
+| Member 4 | GRU | TF-IDF, Skip-gram, CBOW | email@example.com |
+
+## 🎯 Objectives
+
+1. Implement and evaluate 4 different model architectures
+2. Compare performance across multiple word embedding techniques:
+   - TF-IDF (Term Frequency-Inverse Document Frequency)
+   - Skip-gram (Word2Vec)
+   - CBOW (Word2Vec)
+   - GloVe (Optional)
+   - FastText (Optional)
+3. Produce comprehensive comparative analysis with academic rigor
+4. Document findings in research-style report with proper citations
+
+## 📁 Project Structure
+
+```
+text-classification-project/
+│
+├── README.md                              # This file
+├── requirements.txt                        # Python dependencies
+├── .gitignore                             # Git ignore rules
+│
+├── data/
+│   ├── raw/                               # Original dataset (don't modify)
+│   │   └── spam.csv
+│   ├── processed/                         # Preprocessed data
+│   └── README.md                          # Dataset documentation
+│
+├── notebooks/
+│   ├── 01_data_exploration.ipynb          # SHARED - EDA (4+ visualizations)
+│   ├── 02_member1_logistic_regression.ipynb
+│   ├── 03_member2_rnn.ipynb
+│   ├── 04_member3_lstm.ipynb
+│   └── 05_member4_gru.ipynb
+│
+├── src/
+│   ├── __init__.py
+│   ├── preprocessing.py                   # SHARED - Text cleaning
+│   ├── embeddings.py                      # SHARED - All embedding methods
+│   ├── utils.py                           # SHARED - Helper functions
+│   └── evaluation.py                      # SHARED - Metrics & visualizations
+│
+├── models/
+│   ├── saved_models/                      # Trained models (.h5, .pkl)
+│   └── checkpoints/                       # Training checkpoints
+│
+├── results/
+│   ├── figures/                           # All plots/visualizations
+│   ├── tables/                            # CSV result tables
+│   └── comparison_results.csv             # Combined team results
+│
+└── docs/
+    ├── contribution_tracker.xlsx          # REQUIRED for grading
+    └── report.pdf                         # Final academic report
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.8+
+- pip or conda package manager
+- Git
+
+### Installation
+
+1. **Clone the repository**
+```bash
+git clone <repository-url>
+cd Group6-Text-Classification-Assignment
+```
+
+2. **Create virtual environment (recommended)**
+```bash
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
+
+3. **Install dependencies**
+```bash
+pip install -r requirements.txt
+```
+
+4. **Download required embedding models** (if using pre-trained)
+```python
+# Run in Python
+import nltk
+import gensim.downloader as api
+
+nltk.download('punkt')
+nltk.download('stopwords')
+
+# Download GloVe (optional)
+# glove_model = api.load('glove-wiki-gigaword-100')
+```
+
+## 💻 Usage
+
+### Step 1: Data Exploration (TEAM TASK)
+```bash
+jupyter notebook notebooks/01_data_exploration.ipynb
+```
+**Requirements:** 
+- 4+ visualizations (class balance, text length distribution, word clouds, vocabulary analysis)
+- Statistical analysis
+- Preprocessing strategy definition
+
+### Step 2: Individual Model Development
+Each member works on their assigned notebook:
+```bash
+jupyter notebook notebooks/02_member1_logistic_regression.ipynb
+# OR
+jupyter notebook notebooks/03_member2_rnn.ipynb
+# etc.
+```
+
+**Each notebook must:**
+- Implement the assigned model
+- Train with at least 3 different embeddings
+- Perform hyperparameter tuning
+- Generate evaluation metrics (accuracy, F1, confusion matrix)
+- Save results to `results/tables/`
+
+### Step 3: Comparative Analysis
+After all individual experiments:
+```python
+# Combine results
+import pandas as pd
+results = pd.read_csv('results/comparison_results.csv')
+# Generate comparison tables and visualizations
+```
+
+## 📊 Evaluation Metrics
+
+All models will be evaluated using:
+- **Accuracy**: Overall classification accuracy
+- **Precision**: Per-class precision
+- **Recall**: Per-class recall
+- **F1-Score**: Harmonic mean of precision and recall
+- **Confusion Matrix**: Visual representation of predictions
+- **Training Time**: Computational efficiency
+
+## 🔧 Shared Modules
+
+### `src/preprocessing.py`
+- Text cleaning (remove punctuation, lowercase, etc.)
+- Tokenization
+- Stop word removal
+- Stemming/Lemmatization
+
+### `src/embeddings.py`
+- TF-IDF vectorization
+- Word2Vec (Skip-gram & CBOW) training
+- GloVe loading and processing
+- FastText training
+- Embedding adaptation for different models
+
+### `src/evaluation.py`
+- Metric calculation
+- Confusion matrix generation
+- Comparison plots
+- Result table creation
+
+### `src/utils.py`
+- Data loading helpers
+- Train/test split utilities
+- Model saving/loading
+- Logging utilities
+
+## 📝 Contribution Guidelines
+
+### Version Control Workflow
+1. **Pull latest changes** before starting work
+   ```bash
+   git pull origin main
+   ```
+
+2. **Create feature branch** for your work
+   ```bash
+   git checkout -b member1-logistic-regression
+   ```
+
+3. **Commit regularly** with clear messages
+   ```bash
+   git add .
+   git commit -m "Add TF-IDF implementation for Logistic Regression"
+   ```
+
+4. **Push to remote**
+   ```bash
+   git push origin member1-logistic-regression
+   ```
+
+5. **Create Pull Request** for review
+
+### Code Style
+- Follow PEP 8 for Python code
+- Add docstrings to all functions
+- Comment complex logic
+- Use meaningful variable names
+
+### Documentation Requirements
+- Update `docs/contribution_tracker.xlsx` after each work session
+- Document all experiments in notebooks
+- Add citations for techniques used
+- Keep README updated
+
+## 📚 Key References
+
+### Word Embeddings
+- Mikolov et al. (2013). "Efficient Estimation of Word Representations in Vector Space" (Word2Vec)
+- Pennington et al. (2014). "GloVe: Global Vectors for Word Representation"
+- Bojanowski et al. (2017). "Enriching Word Vectors with Subword Information" (FastText)
+
+### Models
+- [Add relevant papers for RNN, LSTM, GRU]
+- [Add papers for your specific application domain]
+
+## 📋 Deliverables Checklist
+
+- [ ] **GitHub Repository**
+  - [ ] Clean, well-documented code
+  - [ ] Meaningful README
+  - [ ] All notebooks functional
+  - [ ] Proper .gitignore
+
+- [ ] **PDF Report** (Academic Format)
+  - [ ] Introduction & problem statement
+  - [ ] Literature review with citations
+  - [ ] Methodology (dataset, preprocessing, models, embeddings)
+  - [ ] Results (2+ comparison tables, visualizations)
+  - [ ] Discussion (analysis, limitations, insights)
+  - [ ] Conclusion & future work
+  - [ ] References (APA/IEEE format)
+  - [ ] Contribution tracker included
+  - [ ] Link to GitHub repo
+
+- [ ] **Experiments**
+  - [ ] Each member: 1 model × 3+ embeddings
+  - [ ] Hyperparameter tuning documented
+  - [ ] All results in `results/` folder
+
+## 🎓 Grading Rubric Alignment
+
+| Criterion | Points | Our Focus |
+|-----------|--------|-----------|
+| Problem Definition & Dataset | 5 | Clear objectives in report intro |
+| Dataset Exploration & Preprocessing | 15 | 4+ visualizations, embedding-specific preprocessing |
+| Model Implementation | 5 | 4 models × 3 embeddings each |
+| Experiment Tables | 5 | At least 2 comprehensive tables |
+| Results & Discussion | 5 | Deep analysis with citations |
+| Code Quality & GitHub | 5 | Modular, documented, clear README |
+| Academic Writing | 10 | Proper citations, original writing |
+| Individual Contribution | 10 | Track in contribution_tracker.xlsx |
+
+## 🤝 Communication
+
+- **Team Meetings:** [Schedule]
+- **Communication Channel:** [Discord/Slack/WhatsApp]
+- **Shared Documents:** [Google Drive link]
+
+## ⚠️ Important Notes
+
+1. **DO NOT** modify files in `data/raw/`
+2. **DO** update contribution tracker after each session
+3. **DO** cite all sources and methods used
+4. **DO NOT** commit large model files to Git (use .gitignore)
+5. **DO** test code before committing
+6. **DO** keep original writing - minimize AI-generated text (<30%)
+
+## 📞 Contact
+
+For questions or issues, contact:
+- Team Lead: [Name] - [Email]
+- Course Instructor: [Name] - [Email]
+
+---
+
+**Last Updated:** February 3, 2026  
+**Repository:** [GitHub URL]  
+**License:** [If applicable]

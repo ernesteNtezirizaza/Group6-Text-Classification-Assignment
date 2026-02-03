@@ -1,0 +1,115 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Data files (large datasets)
+*.csv
+*.tsv
+*.json
+*.xml
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Allow the spam dataset (small enough for Git)
+!data/raw/spam.csv
+!results/comparison_results.csv
+!results/comparison_results.csv
+
+# Model files (too large for Git)
+*.h5
+*.pkl
+*.joblib
+*.pt
+*.pth
+*.ckpt
+models/saved_models/*
+models/checkpoints/*
+!models/saved_models/.gitkeep
+!models/checkpoints/.gitkeep
+
+# Word embeddings (large pre-trained models)
+*.bin
+*.vec
+*.txt.gz
+embeddings/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Logs
+*.log
+logs/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# Temporary files
+*.tmp
+temp/
+tmp/
+
+# Results (optional - decide with team)
+# Uncomment if you want to track results in Git
+# results/figures/*
+# results/tables/*
+# !results/figures/.gitkeep
+# !results/tables/.gitkeep
+
+# Environment variables
+.env
+.env.local
+
+# Documentation drafts (keep final PDF)
+docs/*.docx
+docs/*.odt
+docs/*_draft.pdf

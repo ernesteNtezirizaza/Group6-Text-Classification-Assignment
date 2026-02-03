@@ -1,6 +1,7 @@
 # Group Contribution Tracker
 
 ## Instructions
+
 1. Update this file after each work session
 2. Be specific about tasks completed
 3. Include hours spent
@@ -11,14 +12,16 @@
 ## Member 1: [Name] - Logistic Regression
 
 ### Contributions
-| Date | Task | Hours | Details |
-|------|------|-------|---------|
-| 2026-02-04 | Initial setup | 1.0 | Created project structure |
-|  |  |  |  |
+
+| Date       | Task          | Hours | Details                   |
+| ---------- | ------------- | ----- | ------------------------- |
+| 2026-02-04 | Initial setup | 1.0   | Created project structure |
+|            |               |       |                           |
 
 ### Model Implementation
+
 - [ ] TF-IDF embedding implementation
-- [ ] Skip-gram (Word2Vec) embedding implementation  
+- [ ] Skip-gram (Word2Vec) embedding implementation
 - [ ] CBOW (Word2Vec) embedding implementation
 - [ ] Hyperparameter tuning
 - [ ] Results documentation
@@ -28,12 +31,14 @@
 ## Member 2: [Name] - RNN
 
 ### Contributions
-| Date | Task | Hours | Details |
-|------|------|-------|---------|
-| 2026-02-04 | Initial setup | 1.0 | Created project structure |
-|  |  |  |  |
+
+| Date       | Task          | Hours | Details                   |
+| ---------- | ------------- | ----- | ------------------------- |
+| 2026-02-04 | Initial setup | 1.0   | Created project structure |
+|            |               |       |                           |
 
 ### Model Implementation
+
 - [ ] TF-IDF embedding implementation
 - [ ] Skip-gram (Word2Vec) embedding implementation
 - [ ] CBOW (Word2Vec) embedding implementation
@@ -45,12 +50,14 @@
 ## Member 3: [Name] - LSTM
 
 ### Contributions
-| Date | Task | Hours | Details |
-|------|------|-------|---------|
-| 2026-02-04 | Initial setup | 1.0 | Created project structure |
-|  |  |  |  |
+
+| Date       | Task          | Hours | Details                   |
+| ---------- | ------------- | ----- | ------------------------- |
+| 2026-02-04 | Initial setup | 1.0   | Created project structure |
+|            |               |       |                           |
 
 ### Model Implementation
+
 - [ ] TF-IDF embedding implementation
 - [ ] Skip-gram (Word2Vec) embedding implementation
 - [ ] CBOW (Word2Vec) embedding implementation
@@ -62,12 +69,14 @@
 ## Member 4: [Name] - GRU
 
 ### Contributions
-| Date | Task | Hours | Details |
-|------|------|-------|---------|
-| 2026-02-04 | Initial setup | 1.0 | Created project structure |
-|  |  |  |  |
+
+| Date       | Task          | Hours | Details                   |
+| ---------- | ------------- | ----- | ------------------------- |
+| 2026-02-04 | Initial setup | 1.0   | Created project structure |
+|            |               |       |                           |
 
 ### Model Implementation
+
 - [ ] TF-IDF embedding implementation
 - [ ] Skip-gram (Word2Vec) embedding implementation
 - [ ] CBOW (Word2Vec) embedding implementation
@@ -78,20 +87,21 @@
 
 ## Team Contributions (Shared Tasks)
 
-| Task | Members Involved | Date | Hours |
-|------|------------------|------|-------|
-| Data exploration notebook | All | 2026-02-04 | 2.0 |
-| Preprocessing strategy | All |  |  |
-| Shared module development | All |  |  |
-| Final report writing | All |  |  |
-|  |  |  |  |
+| Task                      | Members Involved | Date       | Hours |
+| ------------------------- | ---------------- | ---------- | ----- |
+| Data exploration notebook | All              | 2026-02-04 | 2.0   |
+| Preprocessing strategy    | All              |            |       |
+| Shared module development | All              |            |       |
+| Final report writing      | All              |            |       |
+|                           |                  |            |       |
 
 ---
 
 **Total Hours by Member:**
-- Member 1: 
-- Member 2: 
-- Member 3: 
-- Member 4: 
+
+- Member 1:
+- Member 2:
+- Member 3:
+- Member 4:
 
 **Note:** Convert this to Excel format (.xlsx) before final submission!

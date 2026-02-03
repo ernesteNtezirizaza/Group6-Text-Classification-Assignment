@@ -1,6 +1,7 @@
 # Text Classification with Multiple Embeddings - Group 6
 
 ## 📋 Project Overview
+
 Comparative analysis of text classification performance using different model architectures and word embedding techniques. This project implements and evaluates multiple embedding-model combinations for spam detection.
 
 **Course:** [Your Course Name]  
@@ -9,12 +10,12 @@ Comparative analysis of text classification performance using different model ar
 
 ## 👥 Team Members
 
-| Name | Model | Embeddings | Contact |
-|------|-------|------------|---------|
+| Name     | Model               | Embeddings              | Contact           |
+| -------- | ------------------- | ----------------------- | ----------------- |
 | Member 1 | Logistic Regression | TF-IDF, Skip-gram, CBOW | email@example.com |
-| Member 2 | RNN | TF-IDF, Skip-gram, CBOW | email@example.com |
-| Member 3 | LSTM | TF-IDF, Skip-gram, CBOW | email@example.com |
-| Member 4 | GRU | TF-IDF, Skip-gram, CBOW | email@example.com |
+| Member 2 | RNN                 | TF-IDF, Skip-gram, CBOW | email@example.com |
+| Member 3 | LSTM                | TF-IDF, Skip-gram, CBOW | email@example.com |
+| Member 4 | GRU                 | TF-IDF, Skip-gram, CBOW | email@example.com |
 
 ## 🎯 Objectives
 
@@ -74,6 +75,7 @@ text-classification-project/
 ## 🚀 Getting Started
 
 ### Prerequisites
+
 - Python 3.8+
 - pip or conda package manager
 - Git
@@ -81,23 +83,27 @@ text-classification-project/
 ### Installation
 
 1. **Clone the repository**
+
 ```bash
 git clone <repository-url>
 cd Group6-Text-Classification-Assignment
 ```
 
 2. **Create virtual environment (recommended)**
+
 ```bash
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
 
 3. **Install dependencies**
+
 ```bash
 pip install -r requirements.txt
 ```
 
 4. **Download required embedding models** (if using pre-trained)
+
 ```python
 # Run in Python
 import nltk
@@ -113,16 +119,21 @@ nltk.download('stopwords')
 ## 💻 Usage
 
 ### Step 1: Data Exploration (TEAM TASK)
+
 ```bash
 jupyter notebook notebooks/01_data_exploration.ipynb
 ```
-**Requirements:** 
+
+**Requirements:**
+
 - 4+ visualizations (class balance, text length distribution, word clouds, vocabulary analysis)
 - Statistical analysis
 - Preprocessing strategy definition
 
 ### Step 2: Individual Model Development
+
 Each member works on their assigned notebook:
+
 ```bash
 jupyter notebook notebooks/02_member1_logistic_regression.ipynb
 # OR
@@ -131,6 +142,7 @@ jupyter notebook notebooks/03_member2_rnn.ipynb
 ```
 
 **Each notebook must:**
+
 - Implement the assigned model
 - Train with at least 3 different embeddings
 - Perform hyperparameter tuning
@@ -138,7 +150,9 @@ jupyter notebook notebooks/03_member2_rnn.ipynb
 - Save results to `results/tables/`
 
 ### Step 3: Comparative Analysis
+
 After all individual experiments:
+
 ```python
 # Combine results
 import pandas as pd
@@ -149,6 +163,7 @@ results = pd.read_csv('results/comparison_results.csv')
 ## 📊 Evaluation Metrics
 
 All models will be evaluated using:
+
 - **Accuracy**: Overall classification accuracy
 - **Precision**: Per-class precision
 - **Recall**: Per-class recall
@@ -159,12 +174,14 @@ All models will be evaluated using:
 ## 🔧 Shared Modules
 
 ### `src/preprocessing.py`
+
 - Text cleaning (remove punctuation, lowercase, etc.)
 - Tokenization
 - Stop word removal
 - Stemming/Lemmatization
 
 ### `src/embeddings.py`
+
 - TF-IDF vectorization
 - Word2Vec (Skip-gram & CBOW) training
 - GloVe loading and processing
@@ -172,12 +189,14 @@ All models will be evaluated using:
 - Embedding adaptation for different models
 
 ### `src/evaluation.py`
+
 - Metric calculation
 - Confusion matrix generation
 - Comparison plots
 - Result table creation
 
 ### `src/utils.py`
+
 - Data loading helpers
 - Train/test split utilities
 - Model saving/loading
@@ -186,23 +205,28 @@ All models will be evaluated using:
 ## 📝 Contribution Guidelines
 
 ### Version Control Workflow
+
 1. **Pull latest changes** before starting work
+
    ```bash
    git pull origin main
    ```
 
 2. **Create feature branch** for your work
+
    ```bash
    git checkout -b member1-logistic-regression
    ```
 
 3. **Commit regularly** with clear messages
+
    ```bash
    git add .
    git commit -m "Add TF-IDF implementation for Logistic Regression"
    ```
 
 4. **Push to remote**
+
    ```bash
    git push origin member1-logistic-regression
    ```
@@ -210,12 +234,14 @@ All models will be evaluated using:
 5. **Create Pull Request** for review
 
 ### Code Style
+
 - Follow PEP 8 for Python code
 - Add docstrings to all functions
 - Comment complex logic
 - Use meaningful variable names
 
 ### Documentation Requirements
+
 - Update `docs/contribution_tracker.xlsx` after each work session
 - Document all experiments in notebooks
 - Add citations for techniques used
@@ -224,11 +250,13 @@ All models will be evaluated using:
 ## 📚 Key References
 
 ### Word Embeddings
+
 - Mikolov et al. (2013). "Efficient Estimation of Word Representations in Vector Space" (Word2Vec)
 - Pennington et al. (2014). "GloVe: Global Vectors for Word Representation"
 - Bojanowski et al. (2017). "Enriching Word Vectors with Subword Information" (FastText)
 
 ### Models
+
 - [Add relevant papers for RNN, LSTM, GRU]
 - [Add papers for your specific application domain]
 
@@ -258,16 +286,16 @@ All models will be evaluated using:
 
 ## 🎓 Grading Rubric Alignment
 
-| Criterion | Points | Our Focus |
-|-----------|--------|-----------|
-| Problem Definition & Dataset | 5 | Clear objectives in report intro |
-| Dataset Exploration & Preprocessing | 15 | 4+ visualizations, embedding-specific preprocessing |
-| Model Implementation | 5 | 4 models × 3 embeddings each |
-| Experiment Tables | 5 | At least 2 comprehensive tables |
-| Results & Discussion | 5 | Deep analysis with citations |
-| Code Quality & GitHub | 5 | Modular, documented, clear README |
-| Academic Writing | 10 | Proper citations, original writing |
-| Individual Contribution | 10 | Track in contribution_tracker.xlsx |
+| Criterion                           | Points | Our Focus                                           |
+| ----------------------------------- | ------ | --------------------------------------------------- |
+| Problem Definition & Dataset        | 5      | Clear objectives in report intro                    |
+| Dataset Exploration & Preprocessing | 15     | 4+ visualizations, embedding-specific preprocessing |
+| Model Implementation                | 5      | 4 models × 3 embeddings each                        |
+| Experiment Tables                   | 5      | At least 2 comprehensive tables                     |
+| Results & Discussion                | 5      | Deep analysis with citations                        |
+| Code Quality & GitHub               | 5      | Modular, documented, clear README                   |
+| Academic Writing                    | 10     | Proper citations, original writing                  |
+| Individual Contribution             | 10     | Track in contribution_tracker.xlsx                  |
 
 ## 🤝 Communication
 
@@ -287,6 +315,7 @@ All models will be evaluated using:
 ## 📞 Contact
 
 For questions or issues, contact:
+
 - Team Lead: [Name] - [Email]
 - Course Instructor: [Name] - [Email]
 

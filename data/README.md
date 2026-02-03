@@ -14,7 +14,7 @@ The SMS Spam Collection is a set of SMS tagged messages that have been collected
 ## Dataset Characteristics
 
 - **Total Messages:** ~5,574
-- **Classes:** 
+- **Classes:**
   - Ham (legitimate messages)
   - Spam (spam messages)
 - **Format:** CSV file with columns:
@@ -23,10 +23,10 @@ The SMS Spam Collection is a set of SMS tagged messages that have been collected
 
 ## Class Distribution
 
-| Class | Count | Percentage |
-|-------|-------|------------|
-| Ham   | ~4,827| ~86.6%     |
-| Spam  | ~747  | ~13.4%     |
+| Class | Count  | Percentage |
+| ----- | ------ | ---------- |
+| Ham   | ~4,827 | ~86.6%     |
+| Spam  | ~747   | ~13.4%     |
 
 **Note:** The dataset is imbalanced with more ham messages than spam.
 
@@ -44,6 +44,7 @@ Available at: http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/
 ## Preprocessing Notes
 
 ### Recommended Preprocessing Steps:
+
 1. Convert text to lowercase
 2. Remove URLs and email addresses
 3. Remove punctuation
@@ -52,6 +53,7 @@ Available at: http://www.dt.fee.unicamp.br/~tiago/smsspamcollection/
 6. Lemmatization or Stemming
 
 ### Embedding-Specific Preprocessing:
+
 - **TF-IDF:** Can work with full cleaned text
 - **Word2Vec/GloVe/FastText:** Requires tokenized text
 - Consider keeping vs. removing stopwords based on embedding method

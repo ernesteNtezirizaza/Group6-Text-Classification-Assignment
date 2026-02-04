@@ -24,8 +24,9 @@ ENV/
 
 # Allow the spam dataset (small enough for Git)
 !data/raw/spam.csv
+!data/processed/spam_preprocessed.csv
 !results/comparison_results.csv
-!results/comparison_results.csv
+!results/tables/*.csv
 
 # Model files (too large for Git)
 *.h5

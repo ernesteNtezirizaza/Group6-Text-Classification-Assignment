@@ -1,0 +1,4 @@
+model,embedding,accuracy,precision,recall,f1_score,training_time
+RNN,TF-IDF,0.9039,0.9059,0.9039,0.9049,69.525
+RNN,Skip-gram,0.8662,0.7504,0.8662,0.8042,49.2693
+RNN,CBOW,0.8833,0.8969,0.8833,0.8887,48.7395

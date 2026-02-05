@@ -1,0 +1,4 @@
+embedding,Accuracy,F1-Score,Accuracy_Delta,F1_Delta,Training Time
+TF-IDF,0.9811,0.9808,+0.00%,-0.02%,18.916s
+Skip-gram,0.9776,0.9775,-0.36%,-0.36%,15.445s
+CBOW,0.9811,0.9811,+0.00%,+0.00%,22.869s

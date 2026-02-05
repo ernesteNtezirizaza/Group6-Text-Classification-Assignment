@@ -17,6 +17,10 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from gensim.models import Word2Vec, FastText
 from gensim.models.keyedvectors import KeyedVectors
 import gensim.downloader as api
+import warnings
+
+# Suppress gensim threading warnings
+warnings.filterwarnings('ignore', message='.*our_dot_float.*')
 
 
 class TFIDFEmbedding:
@@ -85,7 +89,7 @@ class Word2VecEmbedding:
         window: int = 5,
         min_count: int = 2,
         sg: int = 1,  # 1 for Skip-gram, 0 for CBOW
-        workers: int = 4,
+        workers: int = 1,
         epochs: int = 10
     ):
         """
@@ -96,7 +100,7 @@ class Word2VecEmbedding:
             window: Context window size
             min_count: Minimum word frequency
             sg: 1 for Skip-gram, 0 for CBOW
-            workers: Number of worker threads
+            workers: Number of worker threads (default=1 to avoid threading issues)
             epochs: Number of training epochs
         """
         self.vector_size = vector_size

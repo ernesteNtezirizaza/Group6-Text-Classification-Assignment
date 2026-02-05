@@ -1,0 +1,4 @@
+embedding,accuracy,precision,recall,f1_score,training_time
+TF-IDF,0.9794,0.9791,0.9794,0.9791,22.881s
+Skip-gram,0.9829,0.9828,0.9829,0.9828,11.881s
+CBOW,0.9776,0.9773,0.9776,0.9773,16.267s

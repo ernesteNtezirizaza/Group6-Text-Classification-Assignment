@@ -10,12 +10,12 @@ Comparative analysis of text classification performance using different model ar
 
 ## 👥 Team Members
 
-| Name                | Model               | Embeddings              | Contact           |
-| ------------------- | ------------------- | ----------------------- | ----------------- |
-| Mitali Bela         | Logistic Regression | TF-IDF, Skip-gram, CBOW | m.bela@alustudent.com |
-| Charlotte Kariza    | RNN                 | TF-IDF, Skip-gram, CBOW | c.kariza@alustudent.com |
+| Name                | Model               | Embeddings              | Contact                    |
+| ------------------- | ------------------- | ----------------------- | -------------------------- |
+| Mitali Bela         | Logistic Regression | TF-IDF, Skip-gram, CBOW | m.bela@alustudent.com      |
+| Charlotte Kariza    | RNN                 | TF-IDF, Skip-gram, CBOW | c.kariza@alustudent.com    |
 | Ntezirizaza Erneste | LSTM                | TF-IDF, Skip-gram, CBOW | e.nteziriza@alustudent.com |
-| Orpheus Manga       | GRU                 | TF-IDF, Skip-gram, CBOW | o.manga@alustudent.com |
+| Orpheus Manga       | GRU                 | TF-IDF, Skip-gram, CBOW | o.manga@alustudent.com     |
 
 ## 🎯 Objectives
 
@@ -230,43 +230,28 @@ All models will be evaluated using:
 - Pennington et al. (2014). "GloVe: Global Vectors for Word Representation"
 - Bojanowski et al. (2017). "Enriching Word Vectors with Subword Information" (FastText)
 
-## 📋 Deliverables Checklist
+## 📊 Results Summary
 
-- [ ] **GitHub Repository**
-  - [ ] Clean, well-documented code
-  - [ ] Meaningful README
-  - [ ] All notebooks functional
-  - [ ] Proper .gitignore
+**Best Performance:** LSTM with Skip-gram embeddings achieved 98.29% accuracy (F1-score: 0.9828)
 
-- [ ] **PDF Report** (Academic Format)
-  - [ ] Introduction & problem statement
-  - [ ] Literature review with citations
-  - [ ] Methodology (dataset, preprocessing, models, embeddings)
-  - [ ] Results (2+ comparison tables, visualizations)
-  - [ ] Discussion (analysis, limitations, insights)
-  - [ ] Conclusion & future work
-  - [ ] References (APA/IEEE format)
-  - [ ] Contribution tracker included
-  - [ ] Link to GitHub repo
+**Full Results:** See `results/` folder for detailed metrics, confusion matrices, and comparative analysis.
 
-- [ ] **Experiments**
-  - [ ] Each member: 1 model × 3+ embeddings
-  - [ ] Hyperparameter tuning documented
-  - [ ] All results in `results/` folder
+**Contribution Tracker:** [Google Sheets](https://docs.google.com/spreadsheets/d/1n72IX7XeLWLmKUslPp0v7D-Ng0isPF_H4JYrFIScO9Q/edit?gid=0#gid=0)
 
 ## 🤝 Communication
 
-- **Team Meetings:** Google meet
+- **Team Meetings:** Google Meet
 - **Communication Channel:** WhatsApp
-- **Sharing Documents** 
+- **Document Sharing:** Google Docs
 
 ## 📞 Contact
 
 For questions or issues, contact:
 
 - Team Lead: Ntezirizaza Erneste - e.nteziriza@alustudent.com
-- Course Instructor: Samiratu - sntohsi@alueducation.com
+- Course Instructor: Samiratu Ntohsi - sntohsi@alueducation.com
 
 ---
 
-**Repository:** [\[GitHub URL\]](https://github.com/ernesteNtezirizaza/Group6-Text-Classification-Assignment)  
+**Repository:** https://github.com/ernesteNtezirizaza/Group6-Text-Classification-Assignment  
+**Last Updated:** February 8, 2026

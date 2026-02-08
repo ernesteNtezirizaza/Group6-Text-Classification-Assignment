@@ -4,7 +4,7 @@
 
 Comparative analysis of text classification performance using different model architectures and word embedding techniques. This project implements and evaluates multiple embedding-model combinations for spam detection.
 
-**Course:** [Your Course Name]  
+**Course:** Machine Learning Techniques I  
 **Date:** February 2026  
 **Dataset:** Spam Detection (SMS Spam Collection)
 
@@ -24,8 +24,6 @@ Comparative analysis of text classification performance using different model ar
    - TF-IDF (Term Frequency-Inverse Document Frequency)
    - Skip-gram (Word2Vec)
    - CBOW (Word2Vec)
-   - GloVe (Optional)
-   - FastText (Optional)
 3. Produce comprehensive comparative analysis with academic rigor
 4. Document findings in research-style report with proper citations
 
@@ -149,17 +147,6 @@ jupyter notebook notebooks/03_member2_rnn.ipynb
 - Generate evaluation metrics (accuracy, F1, confusion matrix)
 - Save results to `results/tables/`
 
-### Step 3: Comparative Analysis
-
-After all individual experiments:
-
-```python
-# Combine results
-import pandas as pd
-results = pd.read_csv('results/comparison_results.csv')
-# Generate comparison tables and visualizations
-```
-
 ## 📊 Evaluation Metrics
 
 All models will be evaluated using:
@@ -242,7 +229,7 @@ All models will be evaluated using:
 
 ### Documentation Requirements
 
-- Update `docs/contribution_tracker.xlsx` after each work session
+- Update `docs/BSE Group Assignments _ Task Sheet_Machine Learning Techniques I_C1_#_Group 6#].xlsx` after each work session
 - Document all experiments in notebooks
 - Add citations for techniques used
 - Keep README updated
@@ -254,11 +241,6 @@ All models will be evaluated using:
 - Mikolov et al. (2013). "Efficient Estimation of Word Representations in Vector Space" (Word2Vec)
 - Pennington et al. (2014). "GloVe: Global Vectors for Word Representation"
 - Bojanowski et al. (2017). "Enriching Word Vectors with Subword Information" (FastText)
-
-### Models
-
-- [Add relevant papers for RNN, LSTM, GRU]
-- [Add papers for your specific application domain]
 
 ## 📋 Deliverables Checklist
 
@@ -284,33 +266,11 @@ All models will be evaluated using:
   - [ ] Hyperparameter tuning documented
   - [ ] All results in `results/` folder
 
-## 🎓 Grading Rubric Alignment
-
-| Criterion                           | Points | Our Focus                                           |
-| ----------------------------------- | ------ | --------------------------------------------------- |
-| Problem Definition & Dataset        | 5      | Clear objectives in report intro                    |
-| Dataset Exploration & Preprocessing | 15     | 4+ visualizations, embedding-specific preprocessing |
-| Model Implementation                | 5      | 4 models × 3 embeddings each                        |
-| Experiment Tables                   | 5      | At least 2 comprehensive tables                     |
-| Results & Discussion                | 5      | Deep analysis with citations                        |
-| Code Quality & GitHub               | 5      | Modular, documented, clear README                   |
-| Academic Writing                    | 10     | Proper citations, original writing                  |
-| Individual Contribution             | 10     | Track in contribution_tracker.xlsx                  |
-
 ## 🤝 Communication
 
 - **Team Meetings:** Google meet
 - **Communication Channel:** WhatsApp
 - **Sharing Documents** 
-
-## ⚠️ Important Notes
-
-1. **DO NOT** modify files in `data/raw/`
-2. **DO** update contribution tracker after each session
-3. **DO** cite all sources and methods used
-4. **DO NOT** commit large model files to Git (use .gitignore)
-5. **DO** test code before committing
-6. **DO** keep original writing - minimize AI-generated text (<30%)
 
 ## 📞 Contact
 
@@ -321,5 +281,4 @@ For questions or issues, contact:
 
 ---
 
-**Last Updated:** February 3, 2026  
 **Repository:** [\[GitHub URL\]](https://github.com/ernesteNtezirizaza/Group6-Text-Classification-Assignment)  

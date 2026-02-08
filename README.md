@@ -30,7 +30,7 @@ Comparative analysis of text classification performance using different model ar
 ## 📁 Project Structure
 
 ```
-text-classification-project/
+Group6-Text-Classification-Assignment/
 │
 ├── README.md                              # This file
 ├── requirements.txt                        # Python dependencies
@@ -56,18 +56,13 @@ text-classification-project/
 │   ├── utils.py                           # SHARED - Helper functions
 │   └── evaluation.py                      # SHARED - Metrics & visualizations
 │
-├── models/
-│   ├── saved_models/                      # Trained models (.h5, .pkl)
-│   └── checkpoints/                       # Training checkpoints
-│
 ├── results/
 │   ├── figures/                           # All plots/visualizations
 │   ├── tables/                            # CSV result tables
 │   └── comparison_results.csv             # Combined team results
 │
 └── docs/
-    ├── contribution_tracker.xlsx          # REQUIRED for grading
-    └── report.pdf                         # Final academic report
+    ├── BSE Group Assignments _ Task Sheet_Machine Learning Techniques I_C1_#_Group 6#].xlsx
 ```
 
 ## 🚀 Getting Started
@@ -83,7 +78,7 @@ text-classification-project/
 1. **Clone the repository**
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/ernesteNtezirizaza/Group6-Text-Classification-Assignment/
 cd Group6-Text-Classification-Assignment
 ```
 
@@ -174,13 +169,6 @@ All models will be evaluated using:
 - GloVe loading and processing
 - FastText training
 - Embedding adaptation for different models
-
-### `src/evaluation.py`
-
-- Metric calculation
-- Confusion matrix generation
-- Comparison plots
-- Result table creation
 
 ### `src/utils.py`
 
